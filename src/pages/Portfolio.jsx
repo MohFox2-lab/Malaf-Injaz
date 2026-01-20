@@ -3,14 +3,14 @@ import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { Briefcase, User, BookOpen, Target, Award, FileText, Users, TrendingUp, Calendar } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import ProfileDetail from '../components/portfolio/ProfileDetail';
-import PhilosophyDetail from '../components/portfolio/PhilosophyDetail';
-import PlanningDetail from '../components/portfolio/PlanningDetail';
-import StrategiesDetail from '../components/portfolio/StrategiesDetail';
-import AssessmentDetail from '../components/portfolio/AssessmentDetail';
-import RemedialDetail from '../components/portfolio/RemedialDetail';
-import InitiativeDetail from '../components/portfolio/InitiativeDetail';
-import EvidencesDetail from '../components/portfolio/EvidencesDetail';
+import ProfileDetail from '@/components/portfolio/ProfileDetail';
+import PhilosophyDetail from '@/components/portfolio/PhilosophyDetail';
+import PlanningDetail from '@/components/portfolio/PlanningDetail';
+import StrategiesDetail from '@/components/portfolio/StrategiesDetail';
+import AssessmentDetail from '@/components/portfolio/AssessmentDetail';
+import RemedialDetail from '@/components/portfolio/RemedialDetail';
+import InitiativeDetail from '@/components/portfolio/InitiativeDetail';
+import EvidencesDetail from '@/components/portfolio/EvidencesDetail';
 
 const portfolioSections = [
   { key: 'profile', label: 'البيانات الشخصية', icon: User, component: ProfileDetail },
