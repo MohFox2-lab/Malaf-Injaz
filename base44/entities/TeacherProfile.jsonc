@@ -1,0 +1,234 @@
+{
+  "name": "TeacherProfile",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0628\u062f\u0639 \u0627\u0644\u0643\u0627\u0645\u0644"
+    },
+    "specialization": {
+      "type": "string",
+      "description": "\u0627\u0644\u062a\u062e\u0635\u0635"
+    },
+    "school": {
+      "type": "string",
+      "description": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062f\u0631\u0633\u0629"
+    },
+    "education_department": {
+      "type": "string",
+      "description": "\u0627\u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a\u0629"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "\u0627\u0628\u062a\u062f\u0627\u0626\u064a",
+        "\u0645\u062a\u0648\u0633\u0637",
+        "\u062b\u0627\u0646\u0648\u064a"
+      ],
+      "description": "\u0627\u0644\u0645\u0631\u062d\u0644\u0629 \u0627\u0644\u062f\u0631\u0627\u0633\u064a\u0629"
+    },
+    "grades": {
+      "type": "string",
+      "description": "\u0627\u0644\u0635\u0641\u0648\u0641 \u0627\u0644\u062a\u064a \u064a\u062f\u0631\u0633\u0647\u0627"
+    },
+    "qualifications_list": {
+      "type": "array",
+      "description": "\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0645\u0624\u0647\u0644\u0627\u062a \u0627\u0644\u0639\u0644\u0645\u064a\u0629",
+      "items": {
+        "type": "object"
+      }
+    },
+    "experiences_list": {
+      "type": "array",
+      "description": "\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u062e\u0628\u0631\u0627\u062a \u0627\u0644\u0639\u0645\u0644\u064a\u0629",
+      "items": {
+        "type": "object"
+      }
+    },
+    "contact": {
+      "type": "string",
+      "description": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u062a\u0648\u0627\u0635\u0644"
+    },
+    "philosophy_vision": {
+      "type": "string",
+      "description": "\u0631\u0624\u064a\u062a\u064a \u0644\u0644\u062a\u0639\u0644\u064a\u0645 \u0648\u062f\u0648\u0631\u064a \u0643\u0645\u0628\u062f\u0639"
+    },
+    "philosophy_students": {
+      "type": "string",
+      "description": "\u0627\u0644\u062a\u0639\u0627\u0645\u0644 \u0645\u0639 \u0627\u0644\u0637\u0644\u0627\u0628 \u0648\u0627\u0644\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629"
+    },
+    "philosophy_values": {
+      "type": "string",
+      "description": "\u0627\u0644\u0642\u064a\u0645 \u0627\u0644\u062a\u0631\u0628\u0648\u064a\u0629 \u0627\u0644\u0645\u0643\u062a\u0633\u0628\u0629"
+    },
+    "planning_intro": {
+      "type": "string",
+      "description": "\u0645\u0642\u062f\u0645\u0629 \u0627\u0644\u062a\u062e\u0637\u064a\u0637 \u0648\u0627\u0644\u062a\u062d\u0636\u064a\u0631"
+    },
+    "planning_objectives_intro": {
+      "type": "string",
+      "description": "\u0645\u0642\u062f\u0645\u0629 \u0627\u0644\u0623\u0647\u062f\u0627\u0641 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a\u0629"
+    },
+    "planning_custom_strategies": {
+      "type": "string",
+      "description": "\u0627\u0644\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0627\u062a \u0627\u0644\u0625\u0636\u0627\u0641\u064a\u0629 \u0627\u0644\u0645\u0637\u0628\u0642\u0629"
+    },
+    "planning_notes": {
+      "type": "string",
+      "description": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0625\u0636\u0627\u0641\u064a\u0629 \u062d\u0648\u0644 \u0627\u0644\u062a\u062e\u0637\u064a\u0637"
+    },
+    "strategies_remedial": {
+      "type": "string",
+      "description": "\u0627\u0644\u062e\u0637\u0637 \u0627\u0644\u0639\u0644\u0627\u062c\u064a\u0629 \u0627\u0644\u0645\u0637\u0628\u0642\u0629 \u0641\u064a \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0633"
+    },
+    "selected_teaching_strategies": {
+      "type": "array",
+      "description": "\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0633 \u0627\u0644\u0645\u062e\u062a\u0627\u0631\u0629",
+      "items": {
+        "type": "string"
+      }
+    },
+    "selected_educational_tools": {
+      "type": "array",
+      "description": "\u0627\u0644\u0648\u0633\u0627\u0626\u0644 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a\u0629 \u0627\u0644\u0645\u062e\u062a\u0627\u0631\u0629",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assessment_samples": {
+      "type": "object",
+      "description": "\u0646\u0645\u0627\u0630\u062c \u0627\u0644\u062a\u0642\u0648\u064a\u0645 \u0648\u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631\u0627\u062a \u0648\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0637\u0644\u0627\u0628",
+      "properties": {
+        "pre_tests": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "post_tests": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "worksheets": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "rubrics": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "student_work": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "remedial_plans": {
+      "type": "object",
+      "description": "\u0627\u0644\u062e\u0637\u0637 \u0627\u0644\u0639\u0644\u0627\u062c\u064a\u0629 \u0648\u0645\u0639\u0627\u0644\u062c\u0629 \u0627\u0644\u0641\u0627\u0642\u062f \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a",
+      "properties": {
+        "diagnosis_text": {
+          "type": "string",
+          "description": "\u0646\u0635 \u0645\u0631\u062d\u0644\u0629 \u0627\u0644\u062a\u0634\u062e\u064a\u0635"
+        },
+        "action_plan_text": {
+          "type": "string",
+          "description": "\u0646\u0635 \u0627\u0644\u062e\u0637\u0629 \u0627\u0644\u0625\u062c\u0631\u0627\u0626\u064a\u0629"
+        },
+        "support_strategies_text": {
+          "type": "string",
+          "description": "\u0646\u0635 \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0627\u062a \u0627\u0644\u062f\u0639\u0645"
+        },
+        "additional_notes": {
+          "type": "string",
+          "description": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0625\u0636\u0627\u0641\u064a\u0629"
+        },
+        "results": {
+          "type": "array",
+          "description": "\u0646\u062a\u0627\u0626\u062c \u0642\u064a\u0627\u0633 \u0627\u0644\u0623\u062b\u0631",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "percentage": {
+                "type": "number"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "initiative_name": {
+      "type": "string",
+      "description": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0628\u0627\u062f\u0631\u0629 \u0627\u0644\u0645\u062f\u0631\u0633\u064a\u0629"
+    },
+    "initiative_problem": {
+      "type": "string",
+      "description": "\u0627\u0644\u0645\u0634\u0643\u0644\u0629 \u0627\u0644\u0645\u0633\u062a\u0647\u062f\u0641\u0629 \u0645\u0646 \u0627\u0644\u0645\u0628\u0627\u062f\u0631\u0629"
+    },
+    "initiative_engagement_increase": {
+      "type": "string",
+      "description": "\u0646\u0633\u0628\u0629 \u0632\u064a\u0627\u062f\u0629 \u062a\u0641\u0627\u0639\u0644 \u0627\u0644\u0637\u0644\u0627\u0628"
+    },
+    "initiative_projects_count": {
+      "type": "string",
+      "description": "\u0639\u062f\u062f \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0645\u062a\u0645\u064a\u0632\u0629"
+    },
+    "experience_years": {
+      "type": "number",
+      "description": "\u0633\u0646\u0648\u0627\u062a \u0627\u0644\u062e\u0628\u0631\u0629"
+    },
+    "email": {
+      "type": "string",
+      "description": "\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a"
+    },
+    "phone": {
+      "type": "string",
+      "description": "\u0631\u0642\u0645 \u0627\u0644\u062c\u0648\u0627\u0644"
+    },
+    "schedule_image": {
+      "type": "string",
+      "description": "\u0635\u0648\u0631\u0629 \u0627\u0644\u062c\u062f\u0648\u0644 \u0627\u0644\u062f\u0631\u0627\u0633\u064a"
+    },
+    "performance_files": {
+      "type": "array",
+      "description": "\u0645\u0644\u0641\u0627\u062a \u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0623\u062f\u0627\u0621",
+      "items": {
+        "type": "object"
+      }
+    },
+    "profile_image": {
+      "type": "string",
+      "description": "\u0627\u0644\u0635\u0648\u0631\u0629 \u0627\u0644\u0634\u062e\u0635\u064a\u0629"
+    },
+    "academic_year": {
+      "type": "string",
+      "description": "\u0627\u0644\u0639\u0627\u0645 \u0627\u0644\u062f\u0631\u0627\u0633\u064a"
+    },
+    "semester": {
+      "type": "string",
+      "enum": [
+        "\u0627\u0644\u0623\u0648\u0644",
+        "\u0627\u0644\u062b\u0627\u0646\u064a",
+        "\u0627\u0644\u062b\u0627\u0644\u062b"
+      ],
+      "description": "\u0627\u0644\u0641\u0635\u0644 \u0627\u0644\u062f\u0631\u0627\u0633\u064a"
+    }
+  },
+  "required": [
+    "full_name"
+  ]
+}
